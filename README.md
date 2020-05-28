@@ -10,12 +10,20 @@
 
 代码小白 开源出来希望大家一起完善。
 
-
+主要功能，
+首页 
+分类
+列表
+文章
+个人中心
+个人主页
+积分中心  等级  
 
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0528/182107_84337075_763336.png "屏幕截图.png")
 
 
  **无图无真相** 
+
 ![首页](https://images.gitee.com/uploads/images/2020/0528/182447_a00a3645_763336.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0528/182613_4331a4c5_763336.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0528/182632_715644b4_763336.png "屏幕截图.png")
