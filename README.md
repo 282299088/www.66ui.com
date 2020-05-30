@@ -48,5 +48,9 @@
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0528/183051_3f6ee662_763336.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0528/183132_ec2f742b_763336.png "屏幕截图.png")
 
-
+2020-5-30 更新
+新增 留言功能 
+完善 列表页 展示活跃用户头像信息
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0530/103307_384c892b_763336.png "屏幕截图.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0530/103352_c6c3628e_763336.png "屏幕截图.png")
 整理上传中。。。。
