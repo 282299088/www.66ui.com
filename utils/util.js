@@ -1,12 +1,8 @@
 /*
  * 
- * WordPres版微信小程序
- * author: jianbo
- * organization: 守望轩  www.watch-life.net
- * github:    https://github.com/iamxjb/winxin-app-watch-life.net
- * 技术支持微信号：iamxjb
- * 开源协议：MIT
- * Copyright (c) 2017 https://www.watch-life.net All rights reserved.
+ * 织梦版微信小程序
+ * author: 鹏厄
+ * 小镇故事66UI.com
  */
 
 function formatTime(date) {
@@ -17,9 +13,7 @@ function formatTime(date) {
   var hour = date.getHours()
   var minute = date.getMinutes()
   var second = date.getSeconds()
-
-
-  return [year, month, day].map(formatNumber).join('/') + ' ' + [hour, minute, second].map(formatNumber).join(':')
+    return [year, month, day].map(formatNumber).join('/') + ' ' + [hour, minute, second].map(formatNumber).join(':')
 }
 
 function formatNumber(n) {
@@ -35,10 +29,7 @@ function obj2uri(obj) {
 
 function getStrLength(str){
     return str.replace(/[\u0391-\uFFE5]/g, "aa").length;
-}
-
-
-function getDateDiff(dateStr) {    
+}function getDateDiff(dateStr) {    
     var publishTime = Date.parse(dateStr.replace(/-/gi, "/"))/ 1000,
         d_seconds,
         d_minutes,
@@ -205,10 +196,7 @@ function GetUrlFileName(url,domain) {
     }
     
     return filename;
-}
-
-
-function json2Form(json) {
+}function json2Form(json) {
     var str = [];
     for (var p in json) {
         str.push(encodeURIComponent(p) + "=" + encodeURIComponent(json[p]));

@@ -1,22 +1,15 @@
 /*
  * 
- * WordPres版微信小程序
- * author: jianbo
- * organization: 守望轩  www.watch-life.net
- * github:    https://github.com/iamxjb/winxin-app-watch-life.net
- * 技术支持微信号：iamxjb
- * 开源协议：MIT
- * Copyright (c) 2017 https://www.watch-life.net All rights reserved.
+ * 织梦版微信小程序
+ * author: 鹏厄
+ * 小镇故事66UI.com
  */
-
-
 import config from 'config.js';
 var domain = config.getDomain;
 var pageCount = config.getPageCount;
 var categoriesID = config.getCategoriesID;
 var indexListType = config.getIndexListType;
-var HOST_URI = 'https://' + domain +'/plus/wxjson/';
-var HOST_URI_WATCH_LIFE_JSON = 'https://' + domain + '/wp-json/watch-life-net/v1/';
+var HOST_URI = 'https://' + domain +'/plus/wxjson-Open/';
    
 module.exports = {  
   // 获取首页文章列表数据
@@ -77,7 +70,7 @@ module.exports = {
   
   //获取首页滑动文章
   getSwiperPosts: function () {
-    var url = 'https://app.66ui.com/plus/wxjson/swipe.php';
+    var url = HOST_URI+'/swipe.php';
       return url;
   },
 
@@ -153,10 +146,7 @@ module.exports = {
   getChildrenComments: function (obj) {
     var url= HOST_URI + 'comments?parent_exclude=0&per_page=100&orderby=date&order=desc&post=' + obj.postID
      return url;
-  },
-
-
-  //获取最近的30个评论
+  },  //获取最近的30个评论
   getRecentfiftyComments:function(){
     return HOST_URI + 'comments?per_page=30&orderby=date&order=desc'
   },
@@ -177,9 +167,6 @@ module.exports = {
     var url = HOST_URI + '?action=myfeedback&userid=' + mid;
     return url;
   },
-
-
-
 
   //获取文章的第一个图片地址,如果没有给出默认图片
   getContentFirstImage: function (content){
@@ -215,11 +202,8 @@ module.exports = {
       return url;
   },
   //获取用户openid
-  getOpenidUrl() {
-
-    var url = HOST_URI_WATCH_LIFE_JSON;
-    url += "weixin/getopenid";
-    url = HOST_URI + '?action=getopenid';
+  getOpenidUrl() { 
+    var url = HOST_URI + '?action=getopenid';
   return url;
   },
   
@@ -235,10 +219,7 @@ module.exports = {
   setFavoriteUrl() {
     var url = HOST_URI + '?action=setFavorite';
     return url;
-  },
-
-
-  //点赞
+  },  //点赞
   postLikeUrl() {
     var url = HOST_URI + '?action=like';
     return url;
@@ -254,10 +235,7 @@ module.exports = {
   getMyFavorite(mid) {
     var url = HOST_URI + '?action=myfavorite&userid=' + mid;
     return url;
-  },
-
-
-  //获取我的点赞
+  },  //获取我的点赞
   getMyLikeUrl(mid) {
     var url = HOST_URI + '?action=myLike&userid=' + mid;
       return url;

@@ -155,5 +155,3 @@ module.exports = {
   wxParseTemArray:wxParseTemArray,
   emojisInit:emojisInit
 }
-
-

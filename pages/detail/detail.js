@@ -1,17 +1,11 @@
 /*
  * 
- * WordPres版微信小程序
- * author: jianbo
- * organization: 守望轩  www.watch-life.net
- * github:    https://github.com/iamxjb/winxin-app-watch-life.net
- * 技术支持微信号：iamxjb
- * 开源协议：MIT
- *  *Copyright (c) 2017 https://www.watch-life.net All rights reserved.
+ * 织梦版微信小程序
+ * author: 鹏厄
+ * 小镇故事66UI.com
+
  * 
- */
-
-
-import config from '../../utils/config.js'
+ */import config from '../../utils/config.js'
 var Api = require('../../utils/api.js');
 var util = require('../../utils/util.js');
 var Auth = require('../../utils/auth.js');
@@ -874,10 +868,7 @@ Page({
                           mask: true,
                           duration: 2000
                         });
-                        return false;
-
-
-                      }
+                        return false;                      }
                     }
                   });
                   downloadTaskForPostImage.onProgressUpdate((res) => {
@@ -928,10 +919,7 @@ Page({
         return false;
       }
 
-    });
-
-
-  },
+    });  },
   //将canvas转换为图片保存到本地，然后将路径传给image图片的src
   createPosterLocal: function(postImageLocal, qrcodeLoal, title, excerpt) {
     var that = this;
@@ -989,10 +977,7 @@ Page({
               console.log(res)
               //用户按确定按钮以后会回到这里，并且对输入的表单数据会带回
             }
-          })
-
-
-        },
+          })        },
         fail: function(res) {
           console.log(res);
         }
@@ -1050,10 +1035,7 @@ Page({
     var excerpt = appPage.data.detail.excerpt.rendered ? appPage.data.detail.excerpt.rendered : '';
     if (excerpt && excerpt.length != 0 && excerpt != '') {
       excerpt = util.removeHTML(excerpt);
-    }
-
-
-    var postImageUrl = ""; //海报图片地址
+    }    var postImageUrl = ""; //海报图片地址
     var posterImagePath = "";
     var qrcodeImagePath = ""; //二维码图片的地址
     var flag = false;
@@ -1061,10 +1043,7 @@ Page({
     var downloadFileDomain = appPage.data.downloadFileDomain;
     var logo = appPage.data.logo;
     var defaultPostImageUrl = appPage.data.postImageUrl;
-    var postImageUrl = appPage.data.detail.postImageUrl;
-
-
-    //获取文章首图临时地址，若没有就用默认的图片,如果图片不是request域名，使用本地图片
+    var postImageUrl = appPage.data.detail.postImageUrl;    //获取文章首图临时地址，若没有就用默认的图片,如果图片不是request域名，使用本地图片
     if (postImageUrl) {
       var n = 0;
       for (var i = 0; i < downloadFileDomain.length; i++) {
@@ -1159,10 +1138,7 @@ Page({
         fontSize: 30,
         color: '#080808',
       }
-    ];
-
-
-    posterConfig.blocks = blocks; //海报内图片的外框
+    ];    posterConfig.blocks = blocks; //海报内图片的外框
     posterConfig.texts = texts; //海报的文字
     var url = Api.creatPoster();
     var path = "pages/detail/detail?id=" + postId;

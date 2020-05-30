@@ -59,10 +59,7 @@ function trimHtml(html) {
         .replace(/<!--.*?-->/ig, '')
         .replace(/\/\*.*?\*\//ig, '')
         .replace(/[ ]+</ig, '<')
-}
-
-
-function html2json(html, bindName) {
+}function html2json(html, bindName) {
     //处理字符串
     html = removeDOCTYPE(html);
     html = trimHtml(html);

@@ -37,10 +37,7 @@
 
 .kit-title {
 padding: 15rpx;
-}
-
-
-.search-button icon {
+}.search-button icon {
   position: absolute;
   margin-top: 20rpx;
   margin-left: -10rpx;

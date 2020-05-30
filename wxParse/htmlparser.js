@@ -102,10 +102,7 @@ function HTMLParser(html, handler) {
 					handler.chars(text);
 
 				return "";
-			});
-
-
-			parseEndTag("", stack.last());
+			});			parseEndTag("", stack.last());
 		}
 
 		if (html == last)
@@ -179,10 +176,7 @@ function HTMLParser(html, handler) {
 			stack.length = pos;
 		}
 	}
-};
-
-
-function makeMap(str) {
+};function makeMap(str) {
 	var obj = {}, items = str.split(",");
 	for (var i = 0; i < items.length; i++)
 		obj[items[i]] = true;

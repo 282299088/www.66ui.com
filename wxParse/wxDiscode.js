@@ -122,10 +122,7 @@ function strcharacterDiscode(str){
     str = str.replace(/&#038;/g, '&');
     str = str.replace(/&#8211;/g, '-');
     str = str.replace(/&#8212;/g, '--');
-   
-
-
-    return str;
+       return str;
 }
 
 // HTML 支持的其他实体

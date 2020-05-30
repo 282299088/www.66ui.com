@@ -46,10 +46,7 @@
   <block wx:for="{{wxParseData}}" wx:key="">
     <template is="wxParse0" data="{{item}}" />
   </block>
-</template>
-
-
-<!--循环模版-->
+</template><!--循环模版-->
 <template name="wxParse0">
   <!--<template is="wxParse1" data="{{item}}" />-->
   <!--判断是否是标签节点-->
@@ -136,9 +133,6 @@
   </block>
 
 </template>
-
-
-
 <!--循环模版-->
 <template name="wxParse1">
   <!--<template is="wxParse2" data="{{item}}" />-->
@@ -218,10 +212,7 @@
     <template is="WxEmojiView" data="{{item}}" />
   </block>
 
-</template>
-
-
-<!--循环模版-->
+</template><!--循环模版-->
 <template name="wxParse2">
   <!--<template is="wxParse3" data="{{item}}" />-->
   <!--判断是否是标签节点-->

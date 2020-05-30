@@ -9,10 +9,7 @@
 }
 .topic-container{
   background-color: #fff;
-}
-
-
-/*topic list*/
+}/*topic list*/
 
 .topic-common-list {
    padding: 48rpx 0rpx 48rpx 48rpx; 

@@ -1,18 +1,10 @@
 /*
  * 
- * WordPres版微信小程序
- * author: jianbo
- * organization: 守望轩  www.watch-life.net
- * github:    https://github.com/iamxjb/winxin-app-watch-life.net
- * 技术支持微信号：iamxjb
- * 开源协议：MIT
- * Copyright (c) 2017 https://www.watch-life.net All rights reserved.
+ * 织梦版微信小程序
+ * author: 鹏厄
+ * 小镇故事66UI.com
  */
-
-
-
 //配置域名,域名只修改此处。
-//如果wordpress没有安装在网站根目录请加上目录路径,例如："www.watch-life.net/blog"
 var DOMAIN = "app.66ui.com"; //wx1c34b9806b78f036
 var MINAPPTYPE="1";//小程序的类型，如果是企业小程序请填：0 ，如果是个人小程序请填：1
 var WEBSITENAME="小镇故事 Life"; //网站名称
@@ -26,7 +18,7 @@ var INDEXLISTTYPE="all"; //首页显示所有分类
 //var INDEXLISTTYPE ="11" //指定首页显示分类的id
 var PAYTEMPPLATEID = 'hzKpxuPF2rw7O-qTElkeoE0lMwr0O4t9PJkLyt6v8rk';//鼓励消息模版id
 var REPLAYTEMPPLATEID = 'IiAVoBWP34u1uwt801rI_Crgen7Xl2lvAGP67ofJLo8';//回复评论消息模版id
-var ZANIMAGEURL = 'https://app.66ui.com/plus/wxjson/img/Reward.png';//微信鼓励的图片链接，用于个人小程序的赞赏
+var ZANIMAGEURL = 'https://app.66ui.com/plus/wxjson-Open/img/Reward.png';//微信鼓励的图片链接，用于个人小程序的赞赏
 var LOGO = "../../images/logo-icon.png"; // 网站的logo图片
 //设置downloadFile合法域名,不带https ,在中括号([])里增加域名，格式：{id=**,domain:'www.**.com'}，用英文逗号分隔。
 //此处设置的域名和小程序与小程序后台设置的downloadFile合法域名要一致。
@@ -46,8 +38,9 @@ var INDEXNAV = [
   { id: '2', name: '旅行', image: '../../images/nav-icon2.png', url: '../../pages/list/list?categoryID=30', redirecttype: 'apppage', appid: '', extraData: '' },
   { id: '3', name: '自拍', image: '../../images/nav-icon3.png', url: '../../pages/list/list?categoryID=28', redirecttype: 'apppage' },
   { id: '4', name: '美食', image: '../../images/nav-icon4.png', url: '../../pages/list/list?categoryID=29', redirecttype: 'apppage', appid: '', extraData: ''},
-  { id: '5', name: '摄影', image: '../../images/nav-icon5.png', url: '../../pages/list/list?categoryID=32', redirecttype: 'apppage', appid: '', extraData: ''}
-  // { id: '6', name: '教程', image: '../../images/app.png', url: '../../pages/list/list?categoryID=1059', redirecttype: 'apppage', appid: '', extraData: ''}
+  { id: '5', name: '摄影', image: '../../images/nav-icon5.png', url: '../../pages/list/list?categoryID=32', redirecttype: 'apppage', appid: '', extraData: ''},
+  { id: '6', name: '小镇故事', image: '../../images/app.png', url: '../../pages/list/list?categoryID=1059', redirecttype: 'miniapp', appid: 'wx1c34b9806b78f036', extraData: ''}
+    
     
     ];
 

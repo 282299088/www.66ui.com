@@ -1,12 +1,9 @@
 /*
  * 
- * WordPres版微信小程序
- * author: jianbo
- * organization: 守望轩  www.watch-life.net
- * github:    https://github.com/iamxjb/winxin-app-watch-life.net
- * 技术支持微信号：iamxjb
- * 开源协议：MIT
- * Copyright (c) 2017 https://www.watch-life.net All rights reserved.
+ * 织梦版微信小程序
+ * author: 鹏厄
+ * 小镇故事66UI.com
+
  */
 
 .index-container {
@@ -124,10 +121,7 @@ swiper .swiper-desc {
   height: 50rpx;
   margin-left: 20rpx;
   vertical-align: middle;
-}
-
-
-.top-Nav{
+}.top-Nav{
 display: flex;
 padding: 24rpx 0;
 background: #fff;
@@ -149,10 +143,7 @@ line-height: 20rpx;
 font-size: 28rpx;
 color: #4c4c4c;
 font-weight: 500;
-}
-
-
-.share-button{
+}.share-button{
   opacity: 0; 
   position:absolute;
   width: 100%;
@@ -162,9 +153,6 @@ font-weight: 500;
   top:0;
   left: 0;
 }
-
-
-
 .top-Nav2 {
   display: flex;
   flex-direction: row;
