@@ -1,0 +1,32 @@
+{
+    "rules": [
+        {
+        "action": "allow",
+        "page": "*"
+        },
+        {
+            "action": "allow",
+            "page": "pages/detail/detail",
+            "params": ["id"],
+            "matching": "inclusive"
+        },
+        {
+            "action": "allow",
+            "page": "pages/list/list",
+            "params": ["categoryID"],
+            "matching": "inclusive"
+        },
+        {
+            "action": "allow",
+            "page": "pages/index/index"
+        },
+        {
+            "action": "allow",
+            "page": "pages/about/about"
+        },
+        {
+          "action": "allow",
+          "page": "pages/topic/topic"
+        },
+    ]
+}

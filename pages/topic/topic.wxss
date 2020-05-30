@@ -1,0 +1,457 @@
+.search-button {
+  border-left: 0 !important;
+  border-top: 1px solid #f1f1f1 !important;
+  border-right: 1px solid #f1f1f1 !important;
+  border-bottom: 1px solid #f1f1f1 !important;
+  background-color: #f1f1f1 !important;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+  color: #296fd0 !important;
+  width: 20%;
+  margin: 0 !important;
+  /* box-shadow: 1px 1px 6px #ecf0f0; */
+}
+
+.mysearch {
+  position: absolute;
+  top: -35rpx;
+  width: 100%;
+}
+
+.list-content {
+  text-align: justify;
+  z-index: 66;
+  position: absolute; /*绝对定位,文字覆盖图片上*/
+  bottom: 0px; /* 位置在父级元素底部 */
+  height: 100rpx; /* 设置容器高度,显示渐变的高度 *//* 背景渐变:bottom:从下到上,右0.8向0透明渐变 */
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  display: flex; /* flex布局,控制容器内文字元素在底部 */
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 35rpx;
+  line-height: 45rpx;
+  width: 100%;
+}
+
+.kit-title {
+padding: 15rpx;
+}
+
+
+.search-button icon {
+  position: absolute;
+  margin-top: 20rpx;
+  margin-left: -10rpx;
+}
+
+.share-eats {
+  margin-top: -36px;
+  text-decoration: none;
+  user-select: none;
+  display: block;
+  width: 120px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 250px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #ff8300;
+  box-shadow: 0 3px 9px 0 rgba(255, 131, 0, 0.35);
+  overflow: hidden;
+}
+
+.search-input {
+  background-color: #f1f1f1;
+  padding: 16rpx 0 16rpx 2rpx;
+  min-height: 1rem;
+  font-size: 27rpx;
+  border-bottom-left-radius: 20rpx;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border: 1px solid #f1f1f1;
+  border-right: 0 !important;
+  height: 48rpx;
+  width: 80%;
+  text-align: left;
+  box-shadow: 1px 1px 6px #ecf0f0;
+}
+
+.share-button {
+  border: 1px solid #eee !important;
+  color: #296fd0 !important;
+  left: 10rpx;
+  height: 100rpx;
+  width: 200rpx;
+}
+
+.search-pancel {
+  margin-left: 2.8%;
+  display: flex;
+  flex-direction: row;
+  padding-left: 12px;
+  margin-top: 20px;
+  width: 91%;
+  background: #f1f1f1;
+}
+
+.search-pancel image {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 20rpx;
+  vertical-align: middle;
+}
+
+.box-show {
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4rpx 6rpx;
+}
+
+/**/
+
+.fz48 {
+  font-size: 20px;
+}
+
+.container {
+  padding-top: 30px;
+}
+
+.containers {
+  background: #ffad67;
+  height: 800rpx;
+}
+
+.index-title {
+  padding: 60rpx 0 0 40rpx;
+  font-weight: 800;
+  color: #fff;
+}
+
+.title-style {
+  font-size: 26px;
+  letter-spacing: 2rpx;
+  text-shadow: 0 10rpx 20rpx rgba(0, 0, 0, 0.5);
+}
+
+.banner-list {
+  margin: 14rpx 8rpx 15rpx 8rpx;
+  background-image: linear-gradient(25deg, #f76a50, #d99f7a, #a7c9a7, 0.25);
+}
+
+.banner-box {
+  text-align: center;
+}
+
+.banner-image {
+  position: relative;
+  width: 100%;
+  height: 420rpx;
+  border-radius: 20rpx;
+  box-shadow: 0 10rpx 20rpx rgba(0, 0, 0, 0.3);
+  color: white;
+  overflow: hidden;
+  transform: scale(0.9);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.banner-image-content {
+  width: 100%;
+  height: 100%;
+  border-radius: 20rpx;
+}
+
+.banner-title {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  font-weight: bold;
+}
+
+.banner-active {
+  transform: scale(1);
+}
+
+/*顶部轮播图样式*/
+
+swiper {
+  height: 480rpx;
+  padding: 12rpx 20rpx 12rpx 20rpx;
+  border-radius: 8rpx;
+}
+
+.swiper-mask {
+  border-radius: 15rpx;
+}
+
+swiper-item {
+  height: 320rpx;
+}
+
+.index-header {
+  position: relative;
+  height: 320rpx;
+  top: 48px;
+  margin-bottom: 120rpx;
+}
+
+swiper.index-swiper {
+  position: relative;
+  height: 320rpx;
+}
+
+.food-list {
+  padding: 12rpx 12rpx 12rpx 12rpx;
+}
+
+/*中部功能导航栏*/
+
+.top-Nav {
+  margin-top: 15px;
+  display: flex;
+  padding: 22rpx 0 30rpx 0;
+  justify-content: space-around;
+  display: -webkit-box;
+  height: 50rpx;
+  line-height: 50rpx;
+  width: 100%;
+}
+
+.top-item {
+  text-align: center;
+  line-height: 34rpx;
+  width: 152rpx;
+  margin-left: 13px;
+}
+
+.top-item image {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.top-item text {
+  line-height: 20rpx;
+  font-size: 14px;
+  padding-top: -30px;
+  color: #384756;
+}
+
+.recommend-title {
+  margin: 75rpx 0 30rpx 48rpx;
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #353742;
+  line-height: 1;
+}
+
+.food-list-wrap {
+  padding: 10rpx 15rpx 40rpx 15rpx;
+}
+
+.food-recommend .food-list-wrap .food-list .food-item {
+  flex-shrink: 0;
+  background: #fff;
+  overflow: hidden;
+}
+
+.food-recommend .food-list-wrap .food-list .food-item .food-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8rpx;
+}
+
+.food-recommend .food-list-wrap .food-list .food-item .food-detail {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 400rpx;
+  line-height: 1.5;
+  color: white;
+  padding: 20rpx 0rpx;
+  overflow: hidden;
+}
+
+.food-recommend .food-list-wrap .food-list .food-item .food-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.box-cxcat {
+  position: absolute;
+  width: 349px;
+  height: 65rpx;
+  z-index: 6;
+  overflow: hidden;
+  margin-top: 37rpx;
+  text-align: center;
+  color: #fff;
+}
+
+.food-recommend .food-list-wrap .food-list .food-item .food-title {
+  position: relative;
+  font-size: 30rpx;
+  line-height: 1.5;
+  z-index: 8;
+  overflow: hidden;
+  padding: 15rpx 2rpx;
+}
+
+.food-recommend .food-list-wrap .food-list .food-item .food-desc {
+  position: relative;
+  flex-shrink: 0;
+  z-index: 3;
+  /* padding-left: 20rpx; */
+  background-color: #fff;
+}
+
+.food-desc {
+  height: 20rpx;
+}
+
+.food-recommend .food-list-wrap .food-list .food-item .food-desc .item-text {
+  font-size: 24rpx;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.entry-date {
+  font-size: 24rpx;
+  line-height: 4;
+  float: left;
+  color: #fff;
+  z-index: 10000;
+  display: none
+
+}
+
+.entry-date img {
+  background: fff;
+}
+
+.entry-date-text {
+  margin-left: 10rpx;
+}
+
+.entry-icon-text {
+  margin-left: 10rpx;
+}
+
+.loading-tip {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  width: 300rpx;
+  height: 300rpx;
+}
+
+.loading-tip image {
+  width: 100%;
+  height: 100%;
+}
+
+.lable-t {
+  position: relative;
+  top: 100rpx;
+  z-index: 10;
+  width: 20%;
+  text-align: center;
+  margin: 0 auto;
+  background: rgba(73, 175, 0, 0.49);
+  font-size: 30rpx;
+  top: -3rpx;
+  left: -260rpx;
+  border-radius: 8rpx;
+}
+
+.recommend {
+  /* text-align: center; */
+  margin-top: 32px;
+  margin-bottom: 24px;
+  padding-left: 24px;
+  border-left: 4px solid #6aafe6;
+}
+
+.lf-line {
+  width: 11rpx;
+  height: 55rpx;
+  border-radius: 5rpx;
+  background-color: #5899e9;
+  margin-right: 35rpx;
+  position: relative;
+  left: 20rpx;
+}
+
+.lf-t {
+  color: #d5d5d5;
+  font-size: 30rpx;
+  position: relative;
+  left: 422rpx;
+  display: none;
+}
+
+.lf-z {
+  font-size: 32rpx;
+}
+
+.placement-box {
+  display: flex;
+  height: 100rpx;
+  flex-direction: row;
+}
+
+.placement-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  padding: 0 12rpx;
+}
+
+.placement-content-item {
+  width: 47%;
+  height: 280rpx;
+  margin: 5px;
+  /* 绝对定位的父级必须要定位 */
+  position: relative;
+}
+
+.placement-content-item-title text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.placement-content-item-title {
+  position: absolute; /*绝对定位,文字覆盖图片上*/
+  color: white;
+  bottom: 0px; /* 位置在父级元素底部 */
+  font-size: 17px;
+  width: 98%;
+  height: 100rpx; /* 设置容器高度,显示渐变的高度 *//* 背景渐变:bottom:从下到上,右0.8向0透明渐变 */
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  display: flex; /* flex布局,控制容器内文字元素在底部 */
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1% 1% 1% 1%;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+}

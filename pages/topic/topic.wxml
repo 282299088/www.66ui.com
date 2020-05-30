@@ -1,0 +1,36 @@
+<import src="../../templates/copyright.wxml" />
+<import src="../../templates/login-popup.wxml" />
+<!-- loading -->
+<view class="food-recommend">
+  <view class="food-list-wrap">
+    <view class="food-list">
+      <view bindtap="redictDetail" class="food-item" wx:for="{{postsList}}" id="{{item.id}}" wx:for-index="i" wx:key="i">
+        <!-- 文章标题 -->
+        <view class='box-cxcat'>
+          <!-- <view class="food-title">{{item.title.rendered}}</view> -->
+          <text class="">{{detail.category_name}}</text>
+        </view>
+        <view class='Segmenline'>
+          <view>{{detail.pageviews}}</view>
+        </view>
+        <!-- 文章内容 -->
+        <view class="food-detail">
+          <block wx:if="{{item.typename !=null}}">
+            <view class="lable-t">{{item.typename}}</view>
+          </block>
+          <image class="food-icon" src="{{item.post_medium2_image}}" mode="aspectFill"></image>
+          <view class="list-content">
+            <view class='kit-title'>{{item.title.rendered}}</view>
+          </view>
+        </view>
+        <!-- 文章时间/浏览/点赞-->
+        <view class="food-desc">
+        </view>
+        <!--  -->
+      </view>
+      <view class="no-more" style="display:{{isLastPage?'block':'none'}}">---已到了世界的尽头---</view>
+      <!-- <view class='recommend'>优秀小程序推荐</view>
+        <!-- 推荐 -->
+    </view>
+  </view>
+</view>
