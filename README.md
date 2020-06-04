@@ -57,6 +57,9 @@
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0530/103307_384c892b_763336.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0530/103352_c6c3628e_763336.png "屏幕截图.png")
 
-2020-6-5更新
+
+2020-6-5 更新----------------------------------------------------
+
 新增 文章积分兑换阅读，会员等级阅读功能
+
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0605/004530_bc713df5_763336.png "屏幕截图.png")
