@@ -128,19 +128,17 @@ Page({
   },
   onShareAppMessage: function(res) {
     this.ShowHideMenu();
-    console.log(res);
     return {
       title: '分享"' + config.getWebsiteName + '"的文章：' + this.data.detail.title.rendered,
       path: 'pages/detail/detail?id=' + this.data.detail.id,
       imageUrl: this.data.detail.postImageUrl,
-      success: function(res) {
-        // 转发成功
-        console.log(res);
-      },
-      fail: function(res) {
-        console.log(res);
-        // 转发失败
-      }
+    }
+  },
+  onShareTimeline: function (res) {
+    return {
+      title: this.data.detail.title.rendered,
+      query: this.data.detail.id,
+      imageUrl: this.data.detail.postImageUrl
     }
   },
   gotowebpage: function() {
